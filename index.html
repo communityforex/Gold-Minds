@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gold Minds Academy - Aulas de Forex</title>
+  <title>Gold Minds Academy - Transforme sua vida financeira</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -22,13 +22,13 @@
 
     h1 {
       color: #2563EB; /* azul primário */
-      font-size: 28px;
+      font-size: 32px;
       margin-top: 30px;
     }
 
     h2 {
       color: #16A34A; /* verde secundário */
-      font-size: 20px;
+      font-size: 22px;
       margin-top: 10px;
     }
 
@@ -79,39 +79,52 @@
 </head>
 <body>
   <div class="container">
-    <h1>🚨 PARE AGORA MESMO! A OPORTUNIDADE CHEGOU 🚨</h1>
-    <h2>Gold Minds Academy - Aulas Básicas de Forex GRATUITAS</h2>
+    <h1>🚨 ATENÇÃO! Sua oportunidade chegou 🚨</h1>
+    <h2>Aprenda a ganhar dinheiro de verdade com Forex</h2>
 
-    <p>Se você está cansado de contar migalhas e quer finalmente aprender a ganhar dinheiro de verdade no mercado financeiro, a <strong>GOLD MINDS ACADEMY</strong> está abrindo as portas para você.</p>
+    <p>Se você está cansado de ver os outros ganhando enquanto você continua no mesmo lugar, essa é a chance de mudar sua vida financeira.  
+    A <strong>Gold Minds Academy</strong> oferece aulas básicas GRATUITAS de Forex para quem realmente quer agir!</p>
 
-    <a href="https://t.me/Gold_MindsBot" class="cta">👉 QUERO MINHA AULA GRATUITA AGORA</a>
+    <!-- Botão do Telegram -->
+    <a href="https://t.me/Gold_MindsBot" class="cta" id="telegramBtn">👉 ENTRAR NO BOT DO TELEGRAM</a>
 
     <div class="highlight">
-      💰 Esqueça promessas vazias. Aqui é REAL!  
-      🔥 Essas aulas são para quem está pronto para agir, não para curiosos!
+      💰 Esqueça atalhos e promessas falsas. Aqui é REAL!  
+      🔥 Para quem está pronto para mudar, não para curiosos!
     </div>
 
     <!-- Botão para tocar o áudio -->
     <button id="playAudioBtn">🎧 Ouça agora o áudio explicativo</button>
     <audio id="audioIntro">
-      <source src="audio/audio-intro.mp3" type="audio/mpeg">
+      <source src="audio-intro.mp3" type="audio/mpeg">
       Seu navegador não suporta reprodução de áudio.
     </audio>
 
     <p><strong>Como funciona:</strong><br>
     1️⃣ Baixe e crie uma conta no Telegram (se ainda não tiver).<br>
-    2️⃣ Clique no botão acima ou abaixo e entre no nosso grupo exclusivo.<br>
-    ⚠️ Sem Telegram, sem acesso!</p>
+    2️⃣ Clique no botão acima ou abaixo para entrar no grupo exclusivo.</p>
 
-    <a href="https://t.me/Gold_MindsBot" class="cta">👉 ACESSAR GRUPO EXCLUSIVO NO TELEGRAM</a>
+    <p>⚠️ Caso não consiga entrar no Telegram, clique abaixo para acessar nosso grupo do WhatsApp:</p>
+
+    <a href="https://chat.whatsapp.com/CkMM65eNUZyJNO7Vvzi0ng?mode=ems_copy_c" class="cta">👉 ACESSAR GRUPO DO WHATSAPP</a>
   </div>
 
   <script>
     const btn = document.getElementById('playAudioBtn');
     const audio = document.getElementById('audioIntro');
+    const telegramBtn = document.getElementById('telegramBtn');
 
+    // Botão de áudio
     btn.addEventListener('click', () => {
       audio.play();
+    });
+
+    // Redirecionamento alternativo caso Telegram não abra
+    telegramBtn.addEventListener('click', (e) => {
+      setTimeout(() => {
+        // Após 5 segundos, abre grupo do WhatsApp caso o usuário não consiga abrir o Telegram
+        window.open("https://chat.whatsapp.com/CkMM65eNUZyJNO7Vvzi0ng?mode=ems_copy_c", "_blank");
+      }, 5000); // 5 segundos de delay
     });
   </script>
 </body>
