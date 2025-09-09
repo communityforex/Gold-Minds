@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gold Minds Academy - Transforme sua vida financeira</title>
   <style>
+    /* Geral */
     body {
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #111827;
+      background: #0a0a0a; /* Fundo preto */
+      color: #fff;
       margin: 0;
       padding: 0;
       text-align: center;
@@ -17,59 +18,76 @@
     .container {
       max-width: 800px;
       margin: auto;
-      padding: 20px;
+      padding: 30px 20px;
     }
 
     h1 {
-      color: #2563EB; /* azul primário */
-      font-size: 32px;
+      color: #ff0000; /* Vermelho chamativo */
+      font-size: 36px;
       margin-top: 30px;
+      text-shadow: 2px 2px #000;
     }
 
     h2 {
-      color: #16A34A; /* verde secundário */
-      font-size: 22px;
+      color: #FFD700; /* Dourado */
+      font-size: 24px;
       margin-top: 10px;
     }
 
     p {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 1.6;
       margin: 15px 0;
     }
 
     .cta {
       display: inline-block;
-      background: #2563EB; /* azul primário */
-      color: #FFFFFF;
-      padding: 15px 25px;
+      background: #ff0000; /* Vermelho impactante */
+      color: #fff;
+      padding: 18px 30px;
       margin: 20px 0;
       text-decoration: none;
-      font-size: 18px;
-      border-radius: 8px;
+      font-size: 20px;
+      border-radius: 12px;
       font-weight: bold;
+      box-shadow: 0 5px 10px rgba(255,0,0,0.5);
+      transition: 0.3s;
+    }
+
+    .cta:hover {
+      background: #cc0000;
+      box-shadow: 0 5px 15px rgba(255,0,0,0.7);
     }
 
     .highlight {
-      background: #e0f2fe; /* azul claro */
-      padding: 15px;
-      border-radius: 8px;
-      margin: 20px 0;
+      background: #222;
+      color: #00ff99; /* Verde neon */
+      padding: 20px;
+      border-radius: 10px;
+      margin: 25px 0;
       font-weight: bold;
-      color: #111827;
+      font-size: 18px;
+      box-shadow: 0 0 10px #00ff99;
     }
 
     #playAudioBtn {
       display: inline-block;
-      background: #16A34A; /* verde secundário */
+      background: #ff4500; /* Laranja forte */
       color: #fff;
-      padding: 12px 20px;
-      border-radius: 8px;
+      padding: 15px 25px;
+      border-radius: 10px;
       font-weight: bold;
       cursor: pointer;
       margin: 15px 0;
+      font-size: 18px;
       border: none;
-      font-size: 16px;
+      box-shadow: 0 5px 10px rgba(255,69,0,0.5);
+      transition: 0.3s;
+    }
+
+    #playAudioBtn:hover {
+      background: #e63900;
+      box-shadow: 0 5px 15px rgba(255,69,0,0.7);
     }
 
     audio {
@@ -79,22 +97,22 @@
 </head>
 <body>
   <div class="container">
-    <h1>🚨 ATENÇÃO! Sua oportunidade chegou 🚨</h1>
-    <h2>Aprenda a ganhar dinheiro de verdade com Forex</h2>
+    <h1>🚨 ATENÇÃO! Sua Oportunidade ÚNICA 🚨</h1>
+    <h2>Gold Minds Academy - Aulas de Forex GRÁTIS</h2>
 
-    <p>Se você está cansado de ver os outros ganhando enquanto você continua no mesmo lugar, essa é a chance de mudar sua vida financeira.  
-    A <strong>Gold Minds Academy</strong> oferece aulas básicas GRATUITAS de Forex para quem realmente quer agir!</p>
+    <p>Se você quer sair da estagnação financeira e finalmente ganhar dinheiro de verdade, esta é a sua chance!  
+    A <strong>Gold Minds Academy</strong> oferece aulas básicas gratuitas de Forex para quem está pronto para agir AGORA!</p>
 
     <!-- Botão do Telegram -->
     <a href="https://t.me/Gold_MindsBot" class="cta" id="telegramBtn">👉 ENTRAR NO BOT DO TELEGRAM</a>
 
     <div class="highlight">
-      💰 Esqueça atalhos e promessas falsas. Aqui é REAL!  
-      🔥 Para quem está pronto para mudar, não para curiosos!
+      🔥 Sem promessas falsas. Somente resultados reais!  
+      ⚡ Apenas para quem está pronto para mudar de vida!
     </div>
 
     <!-- Botão para tocar o áudio -->
-    <button id="playAudioBtn">🎧 Ouça agora o áudio explicativo</button>
+    <button id="playAudioBtn">🎧 Ouça o áudio explicativo</button>
     <audio id="audioIntro">
       <source src="audio-intro.mp3" type="audio/mpeg">
       Seu navegador não suporta reprodução de áudio.
@@ -102,7 +120,7 @@
 
     <p><strong>Como funciona:</strong><br>
     1️⃣ Baixe e crie uma conta no Telegram (se ainda não tiver).<br>
-    2️⃣ Clique no botão acima ou abaixo para entrar no grupo exclusivo.</p>
+    2️⃣ Clique no botão acima para entrar no grupo exclusivo.</p>
 
     <p>⚠️ Caso não consiga entrar no Telegram, clique abaixo para acessar nosso grupo do WhatsApp:</p>
 
@@ -122,10 +140,10 @@
     // Redirecionamento alternativo caso Telegram não abra
     telegramBtn.addEventListener('click', (e) => {
       setTimeout(() => {
-        // Após 5 segundos, abre grupo do WhatsApp caso o usuário não consiga abrir o Telegram
         window.open("https://chat.whatsapp.com/CkMM65eNUZyJNO7Vvzi0ng?mode=ems_copy_c", "_blank");
       }, 5000); // 5 segundos de delay
     });
   </script>
 </body>
 </html>
+
