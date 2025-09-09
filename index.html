@@ -7,34 +7,41 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #0c0c0c;
-      color: #fff;
+      background: #f5f5f5;
+      color: #111827;
       margin: 0;
       padding: 0;
       text-align: center;
     }
+
     .container {
       max-width: 800px;
       margin: auto;
       padding: 20px;
     }
+
     h1 {
-      color: #ffcc00;
-      font-size: 26px;
+      color: #2563EB; /* azul primário */
+      font-size: 28px;
+      margin-top: 30px;
     }
+
     h2 {
-      color: #fff;
+      color: #16A34A; /* verde secundário */
       font-size: 20px;
       margin-top: 10px;
     }
+
     p {
       font-size: 16px;
       line-height: 1.6;
+      margin: 15px 0;
     }
+
     .cta {
       display: inline-block;
-      background: #ff0000;
-      color: #fff;
+      background: #2563EB; /* azul primário */
+      color: #FFFFFF;
       padding: 15px 25px;
       margin: 20px 0;
       text-decoration: none;
@@ -42,16 +49,31 @@
       border-radius: 8px;
       font-weight: bold;
     }
+
     .highlight {
-      background: #222;
+      background: #e0f2fe; /* azul claro */
       padding: 15px;
       border-radius: 8px;
       margin: 20px 0;
       font-weight: bold;
+      color: #111827;
     }
+
+    #playAudioBtn {
+      display: inline-block;
+      background: #16A34A; /* verde secundário */
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 15px 0;
+      border: none;
+      font-size: 16px;
+    }
+
     audio {
-      margin: 20px 0;
-      width: 100%;
+      display: none;
     }
   </style>
 </head>
@@ -69,17 +91,28 @@
       🔥 Essas aulas são para quem está pronto para agir, não para curiosos!
     </div>
 
-    <audio controls>
+    <!-- Botão para tocar o áudio -->
+    <button id="playAudioBtn">🎧 Ouça agora o áudio explicativo</button>
+    <audio id="audioIntro">
       <source src="audio/audio-intro.mp3" type="audio/mpeg">
       Seu navegador não suporta reprodução de áudio.
     </audio>
 
     <p><strong>Como funciona:</strong><br>
     1️⃣ Baixe e crie uma conta no Telegram (se ainda não tiver).<br>
-    2️⃣ Clique no botão abaixo e entre no nosso grupo exclusivo.<br>
+    2️⃣ Clique no botão acima ou abaixo e entre no nosso grupo exclusivo.<br>
     ⚠️ Sem Telegram, sem acesso!</p>
 
     <a href="https://t.me/Gold_MindsBot" class="cta">👉 ACESSAR GRUPO EXCLUSIVO NO TELEGRAM</a>
   </div>
+
+  <script>
+    const btn = document.getElementById('playAudioBtn');
+    const audio = document.getElementById('audioIntro');
+
+    btn.addEventListener('click', () => {
+      audio.play();
+    });
+  </script>
 </body>
 </html>
